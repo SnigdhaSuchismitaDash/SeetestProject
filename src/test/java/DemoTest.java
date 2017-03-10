@@ -20,6 +20,7 @@ public class DemoTest {
 
     @Test
     public void testAllianz(){
+    	//Changes---2ndTime
         client.setDevice("ios_app:mobility's iPhone");
         client.launch("safari:https://www.allianz.de", true, false);
         client.sleep(2000);
@@ -34,7 +35,7 @@ public class DemoTest {
         client.sleep(10000);
         client.click("WEB", "xpath=//*[@text='Jetzt berechnen' and @nodeName='SPAN' and @width>0]", 0, 1);
         client.sleep(10000);
-        if(client.waitForElement("WEB", "xpath=//*[@text='1. Persönliche Daten']", 0, 30000)){
+        if(client.waitForElement("WEB", "xpath=//*[@text='1. Persï¿½nliche Daten']", 0, 30000)){
             // If statement
         }
         client.click("WEB", "xpath=//*[@name='birthdate_day']", 0, 1);
